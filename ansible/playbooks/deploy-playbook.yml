@@ -1,0 +1,5 @@
+- hosts: kong-api-server
+  become: true
+  roles:
+  - role: ../roles/deploy-task
+  

@@ -9,3 +9,6 @@
   - name: Install dependencies
     npm: 
       path: /opt/collin/kong-service
+  
+  - name: Start Kong-Api 
+    shell: cd /opt/collin/kong-service; nohup npm start

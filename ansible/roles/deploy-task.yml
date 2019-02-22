@@ -1,7 +1,0 @@
-- name: Create Repo in /opt/collin/kong-service
-  git: repo=https://github.com/collin-woodruff-t1cg/kong-api.git dest=/opt/collin/kong-service version=master
-
-- name: Install dependencies
-  npm: 
-    path: /opt/collin/kong-service
-    

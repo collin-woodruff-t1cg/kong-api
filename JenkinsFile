@@ -1,21 +1,13 @@
 node {
     checkout scm 
 
-    stages {
-        stage('Collin Update Repo') {
-            steps {
-                build (job: '../collin-update', wait: true)
-            }
-        }
-        stage('Collin Deploy Kong') {
-            steps {
-                build (job: '../collin-deploy', wait: true)
-            }
-        }
-        stage('Collin Configure Kong') {
-            steps {
-                build (job: '../collin-configure-kong')
-            }
-        }
+    stage('Collin Update Repo') {
+        build job: '../collin-update'
+    }
+    stage('Collin Deploy Kong') {
+        build job: '../collin-deploy'
+    }
+    stage('Collin Configure Kong') {
+        build job: '../collin-configure-kong'
     }
 }

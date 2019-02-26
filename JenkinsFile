@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Collin Update Repo') {
+        stage('Collin Clone Repo') {
             steps {
                 build job: 'collin-clone-repo'
             }

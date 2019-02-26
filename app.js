@@ -15,5 +15,5 @@ app.get('/api/auth', (request, response) => {
 const server = app.listen(port, (error) => {
     if (error) return console.log(`Error: ${error}`);
  
-    console.log(`Server listening on port ${server.address().port}`);
+    console.log(`Server is listening on port ${server.address().port}`);
 });

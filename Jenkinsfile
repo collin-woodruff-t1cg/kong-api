@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Collin Clone Repo') {
             steps {
-                build job: 'collin-clone-repo'
+                build job: 'collin-update-repo'
             }
         }
         stage('Collin Deploy Kong') {

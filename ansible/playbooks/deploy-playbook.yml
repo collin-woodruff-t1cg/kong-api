@@ -1,7 +1,7 @@
 - hosts: kong-api-server
   become: true
   tasks:
-  - name: Create Repo in /opt/collin/kong-service
+  - name: Copy Repo in /opt/collin/kong-service
     copy:
       src: ../../api
       dest: /opt/collin/kong-service/

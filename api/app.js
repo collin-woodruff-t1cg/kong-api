@@ -3,11 +3,11 @@ const express = require('express');
 const port = 8045;
 const app = express();
  
-app.get('/api/non-auth', (request, response) => {
+app.use('/api/non-auth', (request, response) => {
     response.send('Collin\'s Hello World Public!');
 });
 
-app.get('/api/auth', (request, response) => {
+app.use('/api/auth', (request, response) => {
     response.send('Collin\'s Hello World Private!');
 });
  

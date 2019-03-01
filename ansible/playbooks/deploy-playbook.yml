@@ -3,7 +3,7 @@
   tasks:
   - name: Create Repo in /opt/collin/kong-service
     copy:
-      src: ../api/
+      src: ../../api
       dest: /opt/collin/kong-service/
       owner: root
       group: root

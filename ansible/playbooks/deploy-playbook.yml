@@ -1,9 +1,10 @@
 - hosts: kong-api-server
   become: true
+  
   tasks:
   - name: Copy Repo in /opt/collin/kong-service
     copy:
-      src: ../../api
+      src: ../../api/
       dest: /opt/collin/kong-service/
       owner: root
       group: root
